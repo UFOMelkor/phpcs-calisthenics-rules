@@ -190,6 +190,17 @@ This sniff is **configurable**:
 - [`ObjectCalisthenics\Sniffs\Classes\ForbiddenPublicPropertySniff`](/src/ObjectCalisthenics\Sniffs\Classes\ForbiddenPublicPropertySniff.php)
 - [`ObjectCalisthenics\Sniffs\NamingConventions\NoSetterSniff`](/src/ObjectCalisthenics\Sniffs\NamingConventions\NoSetterSniff.php)
 
+The first sniff is **configurable**:
+
+```xml
+<!-- ruleset.xml -->
+<rule ref="ObjectCalisthenics.Classes.ForbiddenPublicProperty">
+	<properties>
+    	<property name="filesToBeSkipped" type="array" value="UserDTO.php,GroupDTO.php" />
+	</properties>
+</rule>
+```
+
 ---
 
 ## Not Implemented Rules
